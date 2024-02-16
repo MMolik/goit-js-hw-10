@@ -4,9 +4,11 @@ import { fetchCatByBreed } from './cat-api';
 
 const breedSelect = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
+const loader = document.querySelector('.loader');
 
 breedSelect.addEventListener('click', () => {
   try {
+    loader.classList.remove('hidden')
     fetchBreeds().then(data => renderSelect(data));
   } catch (error) {
     console.log(error);
@@ -20,10 +22,12 @@ function renderSelect(breeds) {
     })
     .join('');
   breedSelect.insertAdjacentHTML('beforeend', markup);
+  loader.classList.add('hidden')
 }
 
 breedSelect.addEventListener('change', e => {
   fetchCatByBreed(e.target.value).then(data => renderCat(data[0]));
+  catInfo.innerHTML = '';
 });
 
 function renderCat(catData) {
