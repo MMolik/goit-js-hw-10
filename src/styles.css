@@ -59,3 +59,7 @@ body {
   text-shadow: 0 0 1px white;
   
 }
+.breed-select {
+    width: 200px;
+    height: 20px;
+}
