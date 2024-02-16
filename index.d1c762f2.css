@@ -1,0 +1,2 @@
+.hidden{display:none}.loader{width:15px;aspect-ratio:1;border-radius:50%;animation:l5 1s linear infinite alternate}@keyframes l5{0%{background:#000;box-shadow:20px 0 #000,-20px 0 rgba(0,0,0,.133)}33%{background:rgba(0,0,0,.133);box-shadow:20px 0 #000,-20px 0 rgba(0,0,0,.133)}66%{background:rgba(0,0,0,.133);box-shadow:20px 0 rgba(0,0,0,.133),-20px 0 #000}to{background:#000;box-shadow:20px 0 rgba(0,0,0,.133),-20px 0 #000}}
+/*# sourceMappingURL=index.d1c762f2.css.map */
